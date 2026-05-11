@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'dart:io';
 
+import 'package:flutter/foundation.dart';
 import 'package:http/http.dart' as http;
 
 /// Result wrapper for AI caption generation.
@@ -14,10 +15,10 @@ class CaptionResult {
 }
 
 class AIService {
-  static const _apiKey = "AIzaSyA0Ct7taW91ZnV-KOnJYYYIqvbXYvoo7PU";
+  static const _apiKey = "AIzaSyC53IfPCFK4aAV1NmQbFCLyF0-qFeoPLl8";
 
   static const _baseUrl =
-      "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent";
+      "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent";
 
   /// Detect MIME type based on file extension.
   static String _getMimeType(String path) {
@@ -55,8 +56,9 @@ class AIService {
                   "parts": [
                     {
                       "text":
-                          "Describe this image in detail. Be descriptive and engaging, "
-                              "covering the main subjects, colors, mood, and any notable elements."
+                          "Deskripsikan gambar ini dalam Bahasa Indonesia. "
+                              "Gunakan tepat 4 kalimat saja. "
+                              "Jelaskan subjek utama, warna, suasana, dan elemen penting lainnya secara deskriptif dan menarik."
                     },
                     {
                       "inline_data": {
@@ -72,8 +74,9 @@ class AIService {
           .timeout(const Duration(seconds: 30));
 
       if (response.statusCode != 200) {
+        debugPrint("API Error ${response.statusCode}: ${response.body}");
         return CaptionResult(
-          error: "Server error (${response.statusCode}). Please try again.",
+          error: "Server error (${response.statusCode}): ${response.body}",
         );
       }
 
