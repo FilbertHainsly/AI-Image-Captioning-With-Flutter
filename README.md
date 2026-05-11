@@ -1,22 +1,6 @@
-# 🤖 AI Vision — Image Captioning dengan Flutter
+# AI Vision — Image Captioning dengan Flutter
 
 Aplikasi Flutter yang menggunakan **Google Gemini AI** untuk menghasilkan deskripsi otomatis dari gambar. Pengguna dapat mengambil foto dari kamera atau memilih dari galeri, lalu AI akan menganalisis dan memberikan caption dalam **Bahasa Indonesia** (4 kalimat).
-
----
-
-## ✨ Fitur Utama
-
-| Fitur | Deskripsi |
-|---|---|
-| 📸 **Ambil Foto** | Ambil gambar langsung dari kamera perangkat |
-| 🖼️ **Pilih dari Galeri** | Pilih gambar yang sudah ada di galeri |
-| 🤖 **AI Captioning** | Generate deskripsi gambar otomatis menggunakan Google Gemini API |
-| 🇮🇩 **Bahasa Indonesia** | Hasil caption dalam Bahasa Indonesia (4 kalimat) |
-| 📋 **Copy Caption** | Salin caption ke clipboard dengan satu ketukan |
-| 🔄 **Retry on Error** | Tombol retry jika terjadi error |
-| 🎨 **Dark Glassmorphism UI** | Desain modern dengan efek glass, gradient, dan shimmer loading |
-
----
 
 ## 🏗️ Struktur Project
 
@@ -48,7 +32,7 @@ lib/
 
 ---
 
-## ⚙️ Cara Menjalankan
+## Cara Menjalankan
 
 ### 1. Clone Repository
 
@@ -78,68 +62,7 @@ flutter pub get
 flutter run
 ```
 
----
-
-## 📱 Alur Penggunaan
-
-```
-┌─────────────────────────┐
-│     Buka Aplikasi       │
-│   (Tampilan kosong)     │
-└──────────┬──────────────┘
-           │
-           ▼
-┌─────────────────────────┐
-│  Tekan "Upload Image"   │
-│  (Floating Action Btn)  │
-└──────────┬──────────────┘
-           │
-           ▼
-┌─────────────────────────┐
-│  Pilih Sumber Gambar:   │
-│  📸 Kamera / 🖼️ Galeri  │
-└──────────┬──────────────┘
-           │
-           ▼
-┌─────────────────────────┐
-│  Preview Gambar +       │
-│  Shimmer Loading...     │
-└──────────┬──────────────┘
-           │
-           ▼
-┌─────────────────────────┐
-│  ✅ Caption Ditampilkan  │
-│  (4 kalimat, Bahasa ID) │
-│  [Copy] [Retry]         │
-└─────────────────────────┘
-```
-
----
-
-## 🧠 Cara Kerja AI Service
-
-1. **Gambar dibaca** sebagai bytes dari file
-2. **Encode ke Base64** untuk dikirim via HTTP
-3. **Deteksi MIME type** berdasarkan ekstensi file (jpg, png, gif, webp, bmp)
-4. **Kirim ke Gemini API** dengan prompt Bahasa Indonesia
-5. **Parse response** JSON dan tampilkan hasilnya
-6. **Error handling** untuk koneksi gagal, timeout, dan server error
-
-```dart
-// Contoh request ke Gemini API
-{
-  "contents": [{
-    "parts": [
-      { "text": "Deskripsikan gambar ini dalam Bahasa Indonesia..." },
-      { "inline_data": { "mime_type": "image/jpeg", "data": "<base64>" } }
-    ]
-  }]
-}
-```
-
----
-
-## 📦 Dependencies
+## Dependencies
 
 ```yaml
 dependencies:
@@ -149,13 +72,23 @@ dependencies:
   google_fonts: ^6.2.1     # Font Poppins
   shimmer: ^3.0.0          # Efek shimmer loading
 ```
+## Demo Aplikasi
+### Dashboard
+<img width="738" height="1600" alt="WhatsApp Image 2026-05-11 at 17 42 06" src="https://github.com/user-attachments/assets/29aaf92f-5076-4ec0-a4a4-79f7d23202d0" />
 
----
+### Contoh 1
+<img width="738" height="1600" alt="image" src="https://github.com/user-attachments/assets/6de07852-e4a3-4f60-b63b-103052e0324c" />
 
-## ⚠️ Catatan Penting
+<img width="738" height="1600" alt="image" src="https://github.com/user-attachments/assets/19d48f3a-f399-4711-a9c9-9f6bf534a3f6" />
 
-- **API Key**: Jangan push API key ke repository publik. Gunakan environment variable atau `--dart-define` untuk production.
-- **Kuota API**: Free tier Gemini API memiliki batasan request per menit. Jika melebihi kuota, akan muncul error 429.
-- **Ukuran Gambar**: Gambar otomatis dikompres ke max 1920px dengan kualitas 85% sebelum dikirim ke API.
+### Contoh 2
+<img width="738" height="1600" alt="image" src="https://github.com/user-attachments/assets/c21e5c76-4538-4145-9369-1aed1d2306aa" />
 
----****
+<img width="738" height="1600" alt="image" src="https://github.com/user-attachments/assets/aaee8631-269c-4b3b-ba96-cda62b9fd31b" />
+
+
+
+
+
+
+
