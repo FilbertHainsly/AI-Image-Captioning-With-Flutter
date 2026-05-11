@@ -73,18 +73,19 @@ dependencies:
   shimmer: ^3.0.0          # Efek shimmer loading
 ```
 ## Demo Aplikasi
+
 ### Dashboard
-<img width="738" height="1600" alt="WhatsApp Image 2026-05-11 at 17 42 06" src="https://github.com/user-attachments/assets/29aaf92f-5076-4ec0-a4a4-79f7d23202d0" />
+<img width="400" height="800" alt="WhatsApp Image 2026-05-11 at 17 42 06" src="https://github.com/user-attachments/assets/29aaf92f-5076-4ec0-a4a4-79f7d23202d0" />
 
 ### Contoh 1
-<img width="738" height="1600" alt="image" src="https://github.com/user-attachments/assets/6de07852-e4a3-4f60-b63b-103052e0324c" />
+<img width="400" height="800" alt="image" src="https://github.com/user-attachments/assets/6de07852-e4a3-4f60-b63b-103052e0324c" />
 
-<img width="738" height="1600" alt="image" src="https://github.com/user-attachments/assets/19d48f3a-f399-4711-a9c9-9f6bf534a3f6" />
+<img width="400" height="800" alt="image" src="https://github.com/user-attachments/assets/19d48f3a-f399-4711-a9c9-9f6bf534a3f6" />
 
 ### Contoh 2
-<img width="738" height="1600" alt="image" src="https://github.com/user-attachments/assets/c21e5c76-4538-4145-9369-1aed1d2306aa" />
+<img width="400" height="800" alt="image" src="https://github.com/user-attachments/assets/c21e5c76-4538-4145-9369-1aed1d2306aa" />
 
-<img width="738" height="1600" alt="image" src="https://github.com/user-attachments/assets/aaee8631-269c-4b3b-ba96-cda62b9fd31b" />
+<img width="400" height="800" alt="image" src="https://github.com/user-attachments/assets/aaee8631-269c-4b3b-ba96-cda62b9fd31b" />
 
 
 
