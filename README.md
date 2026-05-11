@@ -72,7 +72,7 @@ dependencies:
   google_fonts: ^6.2.1     # Font Poppins
   shimmer: ^3.0.0          # Efek shimmer loading
 ```
-## Demo Aplikasi
+## Screenshot Aplikasi
 
 ### Dashboard
 <img width="400" height="800" alt="WhatsApp Image 2026-05-11 at 17 42 06" src="https://github.com/user-attachments/assets/29aaf92f-5076-4ec0-a4a4-79f7d23202d0" />
