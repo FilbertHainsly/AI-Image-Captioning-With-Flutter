@@ -15,7 +15,7 @@ class CaptionResult {
 }
 
 class AIService {
-  static const _apiKey = "AIzaSyC53IfPCFK4aAV1NmQbFCLyF0-qFeoPLl8";
+  static const _apiKey = "YOUR API KEY";
 
   static const _baseUrl =
       "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent";
